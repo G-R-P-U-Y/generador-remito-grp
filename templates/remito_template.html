@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; }
+        .logo { width: 200px; }
+        .encabezado { display: flex; align-items: center; justify-content: space-between; }
+        .datos { margin-top: 20px; }
+        .seccion { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <img src="Encabezado.jpg" class="logo">
+        <h2>Remito Interno</h2>
+    </div>
+
+    <div class="datos">
+        <strong>Fecha:</strong> {{ data.fecha }}<br>
+        <strong>N° Remito:</strong> {{ data.numero }}<br>
+        <strong>Destinatario:</strong> {{ data.destinatario }}<br>
+        <strong>Dirección / Entrega:</strong> {{ data.direccion }}
+    </div>
+
+    <div class="seccion">
+        <h4>Detalle</h4>
+        <p><strong>Descripción:</strong> {{ data.descripcion }}</p>
+        <p><strong>Cantidad:</strong> {{ data.cantidad }}</p>
+        <p><strong>Observaciones:</strong> {{ data.observaciones }}</p>
+    </div>
+
+    <div class="seccion">
+        <strong>Entregado por:</strong> {{ data.entregado }}<br>
+        <strong>Recibido por:</strong> {{ data.recibido }}
+    </div>
+
+    <div class="seccion" style="margin-top: 60px;">
+        <strong>Firma:</strong>
+        <div style="border-top: 1px solid #000; width: 200px; margin-top: 40px;"></div>
+    </div>
+   
+    <div style="margin-top: 50px; text-align: center; font-size: 12px; color: #555;">
+    Www.grpuruguay.com-
+ grpuruguay@gmail.com-
+ 00598 2 347 9697-    
+Ruta 1 Vieja Km 32.600, C. del Plata (San José)    
+</div>
+
+</body>
+</html>

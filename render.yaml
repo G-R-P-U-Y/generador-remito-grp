@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: remito-grp
+    runtime: python
+    buildCommand: ""
+    startCommand: "python remito_generator/app.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
